@@ -255,8 +255,75 @@
   display: block;
  
 }
+ 
+
+/* ===== Titles ===== */
+
+.section-title {
+  font-size: 30px;
+  color: #008060;
+  margin-bottom: 3px;
+}
+
+.title-link {
+  text-decoration: none;
+  color: #008060;
+  font-weight: 700;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 15px;
+}
 
 
+/*Best seller books*/
+.books-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.books-row {
+  display: flex;
+  gap: 25px;
+}
+
+.book-card {
+  width: 160px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.book-card img {
+  width: 160px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ===== Book Text ===== */
+
+.book-title {
+  display: block;
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #008060;
+  text-decoration: none;
+}
+
+.book-title:hover {
+  text-decoration: underline;
+}
+
+/*Footeri*/
 
 .footer {
   background-color: #f4f4f4;
