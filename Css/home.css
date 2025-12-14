@@ -1,0 +1,309 @@
+/*Headeri*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+}
+
+.logo {
+  font-size: 30px;
+  
+  color: rgb(52, 51, 51);
+}
+
+
+.nav a {
+  position: relative;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #555;
+  padding-bottom: 4px;
+}
+
+.nav a:hover {
+  color: #0F5F5C;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f05b5b;
+  transition: width 0.2s ease;
+}
+
+.nav a.active {
+  color:  #0F5F5C;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/*Fotoja me quote dhe me search bar dhe dy butona*/
+.hero {
+  background: url('./../img/Screenshot\ 2025-11-21\ 173754.png') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+/* overlay me ba foton ma te erret  */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+/* search box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 12px 18px;
+  background-color: #0F5F5C;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* butonat */
+.hero-buttons .btn {
+  display: inline-block;
+  background-color:#C4643A;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background-color: #57731e;
+}
+
+/*Zhandrrat qe levizin*/
+.genre-slider {
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+  padding: 5px 0;
+}
+.genre-slider .slides #itemcolor{
+  background-color: #5555552f;
+
+}
+
+.slides {
+  display: flex;
+  gap: 0;                     
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 120px;              
+  height: 40px;
+
+  background: white;
+  border-radius: 0;           
+  margin: 0;                   
+  padding: 0;                
+
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+/*dinamika,ose zhanret qe levizin ky eshte kodi*/
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+  /* cards te zhanrav te librave me Js qe e kom ba*/
+.booktypes{
+  display: flex;
+  
+}
+
+ #genresId {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card p {
+  margin: 10px 12px 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+ /*more... qe shton zhanra*/
+#genresId {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+#moreBtn {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  margin-top: 180px; 
+
+}
+
+
+/*SHiriti qe tregon qe ka discount*/
+
+.fun-banner {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.fun-banner span {
+  display: block;
+ 
+}
+
+
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer .footer-container .about{
+  width: 55%;
+}
+.footer h3 {
+  margin-top: 0;
+  color:#555555;
+  font-size: 18px;
+}
+
+.footer .about p {
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.footer .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .links li {
+  margin-bottom: 6px;
+}
+
+.footer .links a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer .links a:hover {
+  color:  #57731e;
+}
+
+
