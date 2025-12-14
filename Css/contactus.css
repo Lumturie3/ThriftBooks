@@ -1,0 +1,191 @@
+/*Headeri*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+}
+
+.logo {
+  font-size: 30px;
+  
+  color: rgb(52, 51, 51);
+}
+
+
+.nav a {
+  position: relative;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #555;
+  padding-bottom: 4px;
+}
+
+.nav a:hover {
+  color: #0F5F5C;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f05b5b;
+  transition: width 0.2s ease;
+}
+
+.nav a.active {
+  color:  #0F5F5C;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+
+
+
+/*Contact us*/
+
+.contactus{
+  padding: 20px;
+}
+
+.contactus .row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contactus .row1 .col {
+  width: 70%;
+}
+
+.contactus .row .col .row1 {
+  display: flex;
+}
+
+.contactus .row .col .row1 input {
+  margin-right: 15px;
+  height: 30px;
+  width: 350px;
+  border-radius:grey 6px;
+
+}
+
+.contactus .row .col .row2 input {
+  margin-top: 10px;
+  width: 715px;
+  height: 30px;
+  border-radius:grey 6px;
+}
+
+.contactus .row .col .row3 input {
+  margin-top: 10px;
+  width: 715px;
+  height: 150px;
+  align-items: baseline;
+  border-radius:grey 6px;
+}
+
+.contactus .row .col ul li h3 {
+  color: orange;
+  font-family: 'Mooli', sans-serif;
+}
+
+.contactus .row .col .button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactus .row .col .button button {
+  width: 150px;
+  background: #00A859;
+  border: none;
+  color: white; 
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+.contactus .row .col1 ul {
+  list-style: none;
+}
+.contactus .row .col1 .map{
+  margin-left: 30px;
+  
+}
+.contactus .row .col1 .map iframe{
+  border: 10px;
+  width: 100%;
+}
+button:hover {
+  background: #0F5F5C;
+  outline: 0;
+  color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTERI*/
+.footer {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer .footer-container .about{
+  width: 55%;
+}
+.footer h3 {
+  margin-top: 0;
+  color:#555555;
+  font-size: 18px;
+}
+
+.footer .about p {
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.footer .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .links li {
+  margin-bottom: 6px;
+}
+
+.footer .links a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer .links a:hover {
+  color:  #57731e;
+}
