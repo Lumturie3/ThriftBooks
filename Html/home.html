@@ -3,65 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookInfo</title>
+    <title>Thrift-Books</title>
     <link rel="stylesheet" href="./../Css/home.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>BookInfo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+     <!-- Header -->
+    <header class="header">
+    <div class="logo">Thrift-Books</div>
+    <nav class="nav">
+      <a href="./home.html" class="active">Home</a>
+      <a href="./aboutus.html">About</a>
+      <a href="./books.html" >Books</a>
+      <a href="./contactus.html">Contact</a>
+      <a href="./loginform.html">Long In</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Discover Books Easily</h2>
-            <p>This website is designed to help you explore and access books quickly and easily.</p>
-        </div>
-    </section>
+  <!--Fotoja me quote dhe me search bar dhe dy butona -->
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Second-hand books, <br>first-class stories.</h1>
 
-    <section id="about" class="about container">
-        <h2>About This Page</h2>
-        <p>This website provides information about various books, making it easy for readers to find titles of interest. Our goal is to create a simple and accessible platform for book lovers.</p>
-    </section>
+    <div class="search-box">
+      <input type="text" placeholder="Search for books...">
+      <button class="search-btn">🔍</button>
+    </div>
 
-    <section id="books" class="books container">
-        <h2>Featured Books</h2>
-        <div class="book-list">
-            <div class="book-item">
-                <h3>Book Title 1</h3>
-                <p>Author 1</p>
-            </div>
-            <div class="book-item">
-                <h3>Book Title 2</h3>
-                <p>Author 2</p>
-            </div>
-            <div class="book-item">
-                <h3>Book Title 3</h3>
-                <p>Author 3</p>
-            </div>
-        </div>
-    </section>
+    <div class="hero-buttons">
+      <a href="#" class="btn">Browse All Books</a>
+      <a href="#" class="btn">Sell Your Book</a>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="contact container">
-        <h2>Contact</h2>
-        <p>Email: info@bookinfo.com</p>
-        <p>Phone: +355 123 456 789</p>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 BookInfo. All rights reserved.</p>
-        </div>
-    </footer>
+ <!-- Zhandret e librave qe levizin-->
+    <div class="genre-slider">
+  <div class="slides">
+    <div class="item" id="itemcolor">Fiction</div>
+    <div class="item">Non-Fiction</div>
+    <div class="item" id="itemcolor">Kids</div>
+    <div class="item">Textbooks</div>
+    <div class="item" id="itemcolor">Sci-Fi</div>
+    <div class="item">Fantasy</div>
+    <div class="item" id="itemcolor">Mystery</div>
+    <div class="item">Romance</div>
+    <div class="item" id="itemcolor">Poetry</div>
+    <div class="item">Biography</div>
+    <div class="item" id="itemcolor">Adventure</div>
 
-    <script src="js/script.js"></script>
+    <!-- dy here i kom perserit per me u ba loopa e pafundme -->
+    <div class="item">Fiction</div>
+    <div class="item" id="itemcolor">Non-Fiction</div>
+    <div class="item">Kids</div>
+    <div class="item" id="itemcolor">Textbooks</div>
+    <div class="item">Sci-Fi</div>
+    <div class="item" id="itemcolor">Fantasy</div>
+    <div class="item">Mystery</div>
+    <div class="item" id="itemcolor">Romance</div>
+    <div class="item">Poetry</div>
+    <div class="item" id="itemcolor">Biography</div>
+    <div class="item">Adventure</div>
+  </div>
+</div>
+ <!--mu shfaq zhnrat e librave neform te cards-->
+<br><br>
+ <h1>Featured Books</h1>
+<section id="genresId">
+    
+
+
+
+
+
+
+ <!--a met lidhe meniher me all-books qe me shfaq ma shume libra-->
+  <a  id="moreBtn" href="./../HTML/all-books.html">More...</a>
+</section>
+  
+<br>
+<br>
+<!--Shirit qe tregon qe ka dicount-->
+ <section class="blue-banner">
+  <div class="blue-banner-inner">
+    <h2>Up to 70% OFF on Used Books!</h2>
+    <a href="#" class="shop-btn">Shop Now</a>
+  </div>
+</section>
+
+<br>
+
+<!--====RRESHTI ME LIBRA BEST SELLER ====-->
+
+<h2 class="section-title">
+  <a href="" class="title-link">Bestsellers</a>
+</h2>
+<p class="section-subtitle">This year's top sellers</p>
+
+
+<div class="books-wrapper">
+  <div class="books-row">
+
+    <div class="book-card">
+      <img src="./../img/bestSeller1.png" alt="">
+      <a href="" class="book-title">The Let them Theory</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/Bestseller2.png" alt="">
+      <a href="book2.html" class="book-title">It Starts With Us</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/bestSeller3.png" alt="">
+      <a href="book3.html" class="book-title">The House Maid</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/scrbs4.png" alt="">
+      <a href="book4.html" class="book-title">Forth Wing</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/BreakingTheHabit.png" alt="">
+      <a href="book5.html" class="book-title">Breaking the Habit of being yourself</a>
+    </div>
+    
+    <div class="book-card">
+      <img src="./../img/Screenshot 2025-12-15 123323.png" alt="">
+      <a href="book5.html" class="book-title">The kill cause</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/theAlchemist.png" alt="">
+      <a href="book5.html" class="book-title">The Alchemist/a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/thePowrofNow.png" alt="">
+      <a href="book5.html" class="book-title">The Power of Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/the4agrements.png" alt="">
+      <a href="book2.html" class="book-title">The four Agreements</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/a court of frost and starlight.png" alt="">
+      <a href="book2.html" class="book-title">A Court of Frost and Starlight</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/a court of silver flames.png" alt="">
+      <a href="book2.html" class="book-title">A Court of Silver Flames</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/a court ofe thorn.png" alt="">
+      <a href="book2.html" class="book-title">A Court of Thorns and Roses</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/acourt ofwing and ruin.png" alt="">
+      <a href="book2.html" class="book-title">A Court of Wings and Ruin</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/aCourtofMist and Fury.png" alt="">
+      <a href="book2.html" class="book-title">A Court of Mist and Fury</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/theforthWing.png" alt="">
+      <a href="book2.html" class="book-title">Forth Wing</a>
+    </div>
+
+    <div class="book-card">
+      <img src="./../img/ironFLame.png" alt="">
+      <a href="book2.html" class="book-title">Irone Flame</a>
+    </div>
+
+   
+  </div>
+</div>
+
+
+
+
+<!--Footer-->
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="about">
+        <h3>About Thrift-Books</h3>
+        <p>At Thrift Books, we believe every book deserves a second life.Whether you're searching for classics, rare finds, or your next favorite read, we’re here to bring stories closer to you—one book at a time.
+        </p>
+        <p>Together, we give books a second chance.Together, we keep stories alive.</p>
+      </div>
+      <div class="links">
+        <h3>Our Links</h3>
+        <ul>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<script src="./../Js/home.js"></script>
 </body>
 </html>
