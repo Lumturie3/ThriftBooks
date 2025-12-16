@@ -108,6 +108,7 @@ body {
   background: #0f4434;
   color: white;
 }
+
 /* FORM */
 h2 {
   font-family: 'Playfair Display', serif;
@@ -117,6 +118,7 @@ h2 {
 }
 
 form label {
+  display: block;
   margin: 10px 0 5px;
   font-size: 14px;
 }
@@ -128,6 +130,7 @@ form input {
   border-radius: 10px;
   margin-bottom: 15px;
   font-size: 14px;
+  outline: none;
 }
 
 .forgot {
@@ -155,4 +158,25 @@ form input {
 
 .login-btn:hover {
   background: #0c3627;
+}
+
+/* VALIDATION UI */
+.error {
+  display: block;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #c0392b;
+  min-height: 16px; /* mos me lëviz layout */
+}
+
+.input-error {
+  border: 1px solid #c0392b !important;
+}
+
+.success {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #0f4434;
+  min-height: 16px;
 }

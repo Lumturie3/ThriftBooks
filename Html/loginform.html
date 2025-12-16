@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
 
   <link rel="stylesheet" href="./../Css/loginform.css">
 
-  <!-- Google Fonts -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
@@ -25,7 +26,7 @@
     <h1>Welcome back,<br>reader</h1>
 
     <p class="intro">
-      Log in to continue exploring your favorite books, save wishlists 
+      Log in to continue exploring your favorite books, save wishlists
       and track your reading progress.
     </p>
 
@@ -47,22 +48,28 @@
 
       <h2>Log in to your shelf</h2>
 
-      <form>
-        <label>Email address</label>
-        <input type="email" placeholder="you@example.com">
+      <form id="loginForm" novalidate>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <small class="error" id="emailError"></small>
 
-        <label>Password</label>
-        <input type="password" placeholder="••••••••">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" autocomplete="current-password" required minlength="6">
+        <small class="error" id="passwordError"></small>
 
         <div class="forgot"><a href="#">Forgot your password?</a></div>
 
-        <button type="button" class="login-btn" onclick="goHome()">Log In</button>
+        <!-- KTU e hjekim onclick, e bojm submit -->
+        <button type="submit" class="login-btn">Log In</button>
+
+        <p class="success" id="successMsg"></p>
       </form>
 
     </div>
   </div>
 
 </div>
+
 <script src="./../Js/loginform.js"></script>
 </body>
 </html>
